@@ -15,12 +15,16 @@
 // }
 
 function btn(){
-    var imgMou = document.querySelectorAll('imgMou>img');
-    console.log(imgMou)
-
+    var imgNui = document.querySelectorAll('.imgMou>img')
+    imgNui[0].style.marginLeft = '-50%';
+    imgNui[1].style.marginLeft = '100%';
+    var btn = document.querySelector('.btn');
+    btn.style.display = 'none'
+    var headingWel = document.querySelector('.headingWel')
+    headingWel.style.top = '-20%'
 };  
 
-var a =1
-console.log(a)
+
+
 
 

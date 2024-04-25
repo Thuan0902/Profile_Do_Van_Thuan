@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Freckle+Face&display=swap");
 body {
   font-family: cursive;
   height: 300vh;
@@ -34,17 +35,30 @@ body {
   animation: 7s infinite nhapnho;
 }
 .slide1 .imgMou img:first-child {
+  margin-left: 0%;
   animation: nui1 1s linear;
   transition: all 2s ease-in-out;
 }
 .slide1 .imgMou img:last-child {
   animation: nui2 1s linear;
+  transition: all 2s ease-in-out;
+  margin-left: 0%;
 }
 .slide1 .imgMou img {
   width: 50%;
 }
 
+.headingWel {
+  position: relative;
+  top: 20%;
+  left: 35%;
+  transition: all 2s ease-in-out;
+  font-family: Freckle Face;
+  animation: headingWel 1s linear;
+}
+
 .btn {
+  display: block;
   padding: 1.1em 2em;
   background: none;
   border: 2px solid #fff;
@@ -53,7 +67,7 @@ body {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
   border-radius: 12px;
   background-color: #ecd448;
   font-weight: bolder;
@@ -139,5 +153,13 @@ body {
   }
   100% {
     margin-left: 0%;
+  }
+}
+@keyframes headingWel {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
