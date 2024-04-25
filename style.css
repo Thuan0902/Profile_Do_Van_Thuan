@@ -1,0 +1,102 @@
+body {
+  font-family: cursive;
+  height: 300vh;
+  background-color: #c3e9f3;
+  overflow: hidden;
+}
+
+.nav {
+  font-size: 130%;
+}
+
+.boxHiden {
+  background-color: rgb(164, 97, 15);
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  transition: all 0.3s ease-in-out;
+  left: 100%;
+}
+.boxHiden button {
+  background-color: transparent;
+  border: none;
+  width: auto;
+}
+
+.close {
+  left: 70%;
+}
+
+.slide1 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.slide1 .imgMay {
+  display: flex;
+  width: 100%;
+}
+.slide1 .imgMay img {
+  height: 110px;
+  border: 2px solid black;
+}
+.slide1 .imgMay .may1 {
+  left: 110%;
+  top: 15%;
+  animation: may1 30s infinite;
+}
+.slide1 .imgMay .may2 {
+  left: 10%;
+  top: 20%;
+  animation: may2 30s infinite;
+}
+.slide1 .imgMou {
+  display: flex;
+  bottom: 0px;
+  width: 100%;
+  animation: 7s infinite nhapnho;
+}
+.slide1 .imgMou img {
+  width: 50%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+@keyframes nhapnho {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: -20px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@keyframes may1 {
+  0% {
+    left: 110%;
+  }
+  50% {
+    left: -20%;
+  }
+  100% {
+    left: 110%;
+    top: 10%;
+  }
+}
+@keyframes may2 {
+  0% {
+    left: -20%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: -20%;
+    top: 25%;
+  }
+}/*# sourceMappingURL=style.css.map */
