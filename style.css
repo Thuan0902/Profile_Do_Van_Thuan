@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Freckle+Face&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Signika+Negative:wght@300..700&family=Teko:wght@300..700&display=swap");
 body {
-  font-family: cursive;
+  font-family: Acme;
   height: 300vh;
   background-color: #c3e9f3;
   overflow: hidden;
@@ -49,9 +50,10 @@ body {
 }
 
 .headingWel {
-  position: relative;
-  top: 20%;
-  left: 35%;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
   transition: all 2s ease-in-out;
   font-family: Freckle Face;
   animation: headingWel 1s linear;
@@ -102,6 +104,16 @@ body {
 
 .absolute {
   position: absolute;
+}
+
+.slide2 {
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  left: -50%;
+  top: 20%;
+  font-size: 120%;
+  transition: all 2s ease-in-out;
 }
 
 @keyframes nhapnho {
@@ -160,6 +172,6 @@ body {
     top: -10%;
   }
   100% {
-    top: 20%;
+    top: 30%;
   }
 }/*# sourceMappingURL=style.css.map */

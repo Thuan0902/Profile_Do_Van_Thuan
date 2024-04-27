@@ -1,18 +1,8 @@
-// var makeColor = document.querySelectorAll('.nav-link');
-// for(var i =0;i<makeColor.length;++i){
-//     makeColor[i].style.color =' black'
-// }
 
-// var boxHiden =document.querySelector('.boxHiden');
-// var h1 = document.querySelector('button')
+var hiName = document.getElementById('name')
+// hiName.innerHTML = nameHi.valueOf()
 
 
-// function Close(){
-//     return boxHiden.classList.remove('close')
-// }
-// function Open(){
-//     return boxHiden.classList.add('close')
-// }
 
 function btn(){
     var imgNui = document.querySelectorAll('.imgMou>img')
@@ -21,8 +11,16 @@ function btn(){
     var btn = document.querySelector('.btn');
     btn.style.display = 'none'
     var headingWel = document.querySelector('.headingWel')
-    headingWel.style.top = '-20%'
+    headingWel.style.top = '10%'
+    headingWel.style.left = '10%'
+    headingWel.innerHTML = 'INFORMATION'
+
+    setTimeout(function(){
+        var slide2 = document.querySelector('.slide2')
+            slide2.style.left = '5%'
+    },1000)
 };  
+
 
 
 
